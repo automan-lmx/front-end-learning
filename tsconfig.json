@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {//编译选项
+    "target": "es2016", //配置编译目标代码的版本标准
+    "module": "commonjs", // 配置编译目标使用的模块化标准 es6 commonjs(使用node)
+    "lib": ["es2016"],
+    "outDir": "./dist",
+    "noImplicitUseStrict": true, //不使用严格模式
+    "removeComments": true,  // 注释的代码不编译
+    "moduleResolution": "node",
+    "esModuleInterop": true // 把不是es规范的代码强行编译成es6
+
+  },
+  "include": ["./src"], // 表示要编译的文件夹
+  // "files": ["./src/first.ts"] // 配置编译指定的文件
+}
